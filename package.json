@@ -1,0 +1,14 @@
+{
+  "name": "alto-design-site",
+  "private": true,
+  "description": "Site Alto Design Solution : WordPress + thème alto + plugin alto-core",
+  "scripts": {
+    "dev": "wp-playground server --php=8.3 --wp=7.1 --port=9400 --login --blueprint=./blueprint.json --mount=./wordpress/themes/alto:/wordpress/wp-content/themes/alto --mount=./wordpress/plugins/alto-core:/wordpress/wp-content/plugins/alto-core"
+  },
+  "devDependencies": {
+    "@wp-playground/cli": "3.1.65"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

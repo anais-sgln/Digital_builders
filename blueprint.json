@@ -1,0 +1,14 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/",
+  "preferredVersions": { "php": "8.3", "wp": "7.1" },
+  "steps": [
+    { "step": "setSiteLanguage", "language": "fr_FR" },
+    { "step": "setSiteOptions", "options": { "blogname": "Alto Design Solution", "permalink_structure": "/%postname%/" } },
+    { "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "secure-custom-fields" } },
+    { "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "polylang" } },
+    { "step": "installPlugin", "pluginData": { "resource": "wordpress.org/plugins", "slug": "wp-seopress" } },
+    { "step": "activatePlugin", "pluginPath": "alto-core/alto-core.php" },
+    { "step": "activateTheme", "themeFolderName": "alto" }
+  ]
+}

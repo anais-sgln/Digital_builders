@@ -1,0 +1,6 @@
+node_modules/
+.playground/
+*.log
+.DS_Store
+Thumbs.db
+.env
